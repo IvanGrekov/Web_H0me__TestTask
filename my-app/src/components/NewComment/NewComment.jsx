@@ -2,7 +2,6 @@ import React from 'react';
 import { Form } from '../Form/index';
 import './NewComment.scss';
 
-// eslint-disable-next-line import/prefer-default-export
 export const NewComment = React.memo(
   () => (
     <section className="new-comment app__content">

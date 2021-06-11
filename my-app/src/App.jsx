@@ -12,7 +12,6 @@ const App = () => {
 
   const getData = (pageNumber = 1) => {
     sendQuerry({}, pageNumber)
-      // eslint-disable-next-line camelcase
       .then(({ data, last_page, current_page }) => {
         setCurrentPage(current_page);
         setCurrentCommentList([...data]);

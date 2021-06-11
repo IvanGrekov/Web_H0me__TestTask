@@ -1,15 +1,14 @@
 const apiAddress = 'https://jordan.ashton.fashion/api/goods/30/comments';
 
-// eslint-disable-next-line import/prefer-default-export
 export const sendQuerry = (options = {}, searchParameter) => (
   fetch(
     `${apiAddress}?page=${searchParameter}`,
     options,
   )
     .then((response) => response.json())
+    .catch(console.log)
 );
 
-// eslint-disable-next-line import/prefer-default-export
 export const post = (comment) => {
   const queryOptions = {
     method: 'POST',

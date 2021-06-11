@@ -3,7 +3,6 @@ import { CommentsContext } from '../../CommentsContext';
 import { post } from '../../api';
 import './Form.scss';
 
-// eslint-disable-next-line import/prefer-default-export
 export const Form = React.memo(
   () => {
     const { updateData } = useContext(CommentsContext);

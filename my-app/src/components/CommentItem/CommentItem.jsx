@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import classNames from 'classnames';
 import './CommentItem.scss';
 
-// eslint-disable-next-line import/prefer-default-export
 export const CommentItem = React.memo(
   ({ item }) => {
     const [textExpanding, setTextExpanding] = useState(false);
     const { name, text } = item;
     const maxVisibleTextLength = 75;
 
-    // eslint-disable-next-line no-unneeded-ternary
     let overflow = text.length > maxVisibleTextLength ? true : false;
 
     if (text.length > 70) {

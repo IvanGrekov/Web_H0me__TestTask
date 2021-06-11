@@ -6,7 +6,6 @@ import { Pagination } from '../Pagination';
 
 import './CommentList.scss';
 
-// eslint-disable-next-line import/prefer-default-export
 export const CommentList = React.memo(
   () => {
     const { currentCommentList } = useContext(CommentsContext);
